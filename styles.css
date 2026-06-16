@@ -179,12 +179,95 @@ p {
     color: var(--color-text);
 }
 
-.brand-mark {
-    width: 0.85rem;
-    height: 0.85rem;
-    border: 1px solid var(--color-accent);
+.orbit-glyph {
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: inline-block;
+    flex: 0 0 auto;
+    opacity: 0.9;
+}
+
+.orbit-core {
+    position: absolute;
+    width: 0.42rem;
+    height: 0.42rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(45, 212, 191, 0.35);
+    background-color: var(--color-accent);
+    box-shadow: 0 0 12px rgba(45, 212, 191, 0.45);
+}
+
+.orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.orbit-one {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: -0.625rem;
+    margin-top: -0.625rem;
+    animation: orbit-spin 22s linear infinite;
+}
+
+.orbit-two {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: -0.95rem;
+    margin-top: -0.95rem;
+    animation: orbit-spin 37s linear infinite reverse;
+}
+
+.orbit-three {
+    width: 2.55rem;
+    height: 2.55rem;
+    margin-left: -1.275rem;
+    margin-top: -1.275rem;
+    animation: orbit-spin 58s linear infinite;
+}
+
+.orbit-body {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 8px rgba(45, 212, 191, 0.35);
+}
+
+.orbit-body-one {
+    width: 0.24rem;
+    height: 0.24rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.orbit-body-two {
+    width: 0.2rem;
+    height: 0.2rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.orbit-body-three {
+    width: 0.18rem;
+    height: 0.18rem;
+    bottom: 0;
+    left: 28%;
+    opacity: 0.65;
+}
+
+@keyframes orbit-spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .nav-site {
@@ -300,6 +383,8 @@ section {
 }
 
 .hero-card {
+    position: relative;
+    overflow: hidden;
     background: linear-gradient(
         135deg,
         var(--color-surface),
@@ -308,6 +393,22 @@ section {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
     padding: var(--space-xl);
+}
+
+.hero-decoration-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: min(28%, 16rem);
+    height: auto;
+    opacity: 0.32;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-card > :not(.hero-decoration-image) {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-subtitle {
@@ -594,6 +695,13 @@ section {
         padding: var(--space-sm) var(--space-md);
     }
 
+    .hero-decoration-image {
+        width: 12rem;
+        opacity: 0.14;
+        top: 1rem;
+        right: -2rem;
+    }
+
     .card-grid,
     .toolkit-grid {
         grid-template-columns: 1fr;
@@ -621,5 +729,38 @@ section {
     .contact-links {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .project-showcase {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    }
+
+    .project-stack {
+        order: 1;
+    }
+
+    .project-control-prev {
+        order: 2;
+    }
+
+    .project-control-next {
+        order: 3;
+    }
+
+    .project-control {
+        justify-self: center;
+    }
+
+    .project-footer {
+        margin-top: var(--space-lg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orbit-one,
+    .orbit-two,
+    .orbit-three {
+        animation: none;
     }
 }
