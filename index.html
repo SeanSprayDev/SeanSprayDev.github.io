@@ -6,7 +6,20 @@
     </head>
     <body>
         <header>
-            <h1>Header</h1>
+            <div class="nav-container">
+                <a class="brand">
+                    <span class="brand-mark"></span>
+                    <span class="brand-text"></span>
+                </a>
+                <div class="nav-site">
+                    <a class="nav-link" href="#build">Build</a>
+                    <a class="nav-link" href="#toolkit">Toolkit</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#notes">Notes</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
         </header>
         <main>
             <section class="hero">
@@ -21,17 +34,21 @@
                             <p>Tools, systems, interactive projects, games, and software that organizes complex ideas</p>
                         </div>
                         <div class="hero-actions">
-                            <!--links/buttons here-->
+                            <a class="button button-primary" href="#">View Projects</a>
+                            <a class="button button-primary" href="https://github.com/SeanSprayDev" target="_blank">GitHub</a>
+                            <a class="button button-primary" href="assets/documents/Resume.pdf" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="focus">
                 <div class="container">
-                    <h2>Current Focus</h2>
+                    <div class="focus-card">
+                        <h2>Current Focus</h2>
+                    </div>
                 </div>
             </section>
-            <section class="what-i-build">
+            <section class="what-i-build" id="build">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
@@ -69,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="toolkits">
+            <section class="toolkits" id="toolkit">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
@@ -99,19 +116,37 @@
                     </div>  
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
                             <h2>Featured Projects</h2>
                         </div>
-                        <h2>Project Title</h2>
                         <div class="section-description">
+                            <p>Selected projects will be added here as they are completed and documented.</p>
                         </div>
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <h3 class="project-title">Project Template</h3>
+                                <span class="project-status">In Progress</span>
+                            </div>
+                            <p class="project-summary">
+                                A reusable card layout for future portfolio projects
+                            </p>
+                            <div class="project-meta">
+                                <p class="project-meta-item"><strong>Focus:</strong> Tooling (or whatever other focus)</p>
+                                <p class="project-meta-item"><strong>Tech:</strong> C# · .NET · SQL · Godot · JavaScript</p>
+                                <p class="project-meta-item"><strong>Role:</strong> Design · Development · Documentation</p>
+                            </div>
+                            <div class="project-actions">
+                                <a class="button button-primary" href="#">View Case Study</a>
+                                <a class="button button-secondary" href="#">View Code</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
-            <section class="design-notes">
+            <section class="design-notes" id="notes">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
@@ -137,7 +172,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
@@ -153,7 +188,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <div class="section-header">
                         <div class="section-title">
@@ -161,16 +196,21 @@
                         </div>
                     </div>
                     <div class="contact-links">
-                        <p>Email: seanspray.dev@gmail.com</p>
-                        <p>Github: https://github.com/SeanSprayDev</p>
-                        <p>LinkedIn: https://www.linkedin.com/in/seanspray/</p>
-                        <p>Resume</p>  
+                        <a class="button button-primary" href="mailto:seanspray.dev@gmail.com">Email</a>
+                        <a class="button button-secondary" href="https://github.com/SeanSprayDev" target="_blank">Github</a>
+                        <a class="button button-secondary" href="https://www.linkedin.com/in/seanspray/" target="_blank">LinkedIn</a>
+                        <a class="button button-secondary" href="assets/documents/Resume.pdf" target="_blank">Resume</a>  
                     </div>                    
                 </div>
             </section>
         </main>
-        <footer>
-            <h1>Footer</h1>
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <div class="footer-brand">
+                    <span class="brand-mark"></span>
+                </div>
+                <p class="footer-text">@2026 Sean Spray</p>
+            </div>
         </footer>
     </body>
 </html>

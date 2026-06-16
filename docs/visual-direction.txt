@@ -1,0 +1,35 @@
+Portfolio Visual Motif Sheet
+
+Theme:
+Dark celestial / moonlit developer archive.
+
+Core feeling:
+Curious, structured, quiet, mysterious, technical.
+
+Main symbol:
+Orbiting moon glyph.
+Used in hero, favicon/logo idea, footer, and maybe project card backs.
+
+Supporting shapes:
+Circle — systems, cycles, worlds.
+Crescent — moonlight, curiosity, mystery.
+Triangle — direction, decisions, progress.
+Square — structure, tools, architecture.
+Diamond — projects, artifacts, case files.
+Nodes/orbit lines — connections, systems thinking.
+
+Texture:
+Subtle grain/noise.
+Faint celestial chart marks.
+No parchment, no brown fantasy scroll look.
+
+Motion:
+Slow orbit on moon glyph.
+Maybe one or two slow rotating shapes.
+Hover effects should be subtle.
+No fast spinning, bouncing, flashing, or distracting animation.
+
+Accent behavior:
+Teal is the main accent.
+Use teal for buttons, title lines, hover states, card edges, and glyph highlights.
+Other colors only if project-specific.
