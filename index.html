@@ -3,15 +3,17 @@
     <head>
         <meta charset = "UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="site-header">
             <div class="nav-container">
-                <a class="brand">
+                <a class="brand" href="#top" aria-label="Sean Spray home">
                     <span class="brand-mark"></span>
-                    <span class="brand-text"></span>
                 </a>
-                <div class="nav-site">
+                <nav class="nav-site" aria-label="Primary navigation">
                     <a class="nav-link" href="#build">Build</a>
                     <a class="nav-link" href="#toolkit">Toolkit</a>
                     <a class="nav-link" href="#projects">Projects</a>
@@ -27,14 +29,14 @@
                     <div class="hero-card">
                         <p class="section-label">Archive Entry / Developer Profile</p>
                         <h1>Sean Spray</h1>
-                        <div class="her-subtitle">
-                            <p>Creative technical builder / systems-minded software engineering student.</p>
-                        </div>
-                        <div class="hero-description">
-                            <p>Tools, systems, interactive projects, games, and software that organizes complex ideas</p>
-                        </div>
+                        <p class="hero-subtitle">
+                            Creative technical builder / systems-minded software engineering student
+                        </p>
+                        <p class="hero-description">
+                            Tools, systems, interactive projects, games, and software that organizes complex ideas
+                        </p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="#">View Projects</a>
+                            <a class="button button-primary" href="#projects">View Projects</a>
                             <a class="button button-primary" href="https://github.com/SeanSprayDev" target="_blank">GitHub</a>
                             <a class="button button-primary" href="assets/documents/Resume.pdf" target="_blank">Resume</a>
                         </div>
@@ -43,45 +45,40 @@
             </section>
             <section class="focus">
                 <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Current Focus</h2>
+                        <p class="section-description">
+                            What I'm actively working on right now.
+                        </p>
+                    </div>
                     <div class="focus-card">
-                        <h2>Current Focus</h2>
+                        <h3>Portfolio polish and project documentation</h3>
+                        <p>I'm currently refining the visual direction of this portfolio, documenting project work, and preparing space for case studies.</p>
                     </div>
                 </div>
             </section>
             <section class="what-i-build" id="build">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>What I Build</h2>
-                        </div>
-                        <div class="section-description">
-                            <p>I'm interested in software that organizes complexity and gives ideas a usable shape. My work tends to orbit around tools, systems, and interactive projects.</p>
-                        </div>
+                        <h2 class="section-title">What I Build</h2>
+                        <p class="section-description">
+                            I'm interested in software that organizes complexity and gives ideas a usable shape. My work tends to orbit around tools, systems, and interactive projects.
+                        </p>
                     </div>
                     <div class="card-grid">
                         <div class="card">
-                            <div class="card-title">
-                                <h2>Tools</h2>
-                            </div>
-                            <div class="card-text">
-                                <p>Utilities, generators, trackers, and workflow-focused applications that help turn scattered ideas into something practical.</p>
-                            </div>
+                            <h3 class="card-title">Tools</h3>
+                            <p class="card-text">
+                                Utilities, generators, trackers, and workflow-focused applications that help turn scattered ideas into something practical.
+                            </p>
                         </div>
                         <div class="card">
-                            <div class="card-title">
-                                <h2>Systems</h2>
-                            </div>
-                            <div class="card-text">
-                                <p>Structured logic, data models, rules, mechanics, and state-driven behavior that make software easier to understand, extend, and use.</p>
-                            </div>
+                            <h3 class="card-title">Systems</h3>
+                            <p class="card-text">Structured logic, data models, rules, mechanics, and state-driven behavior that make software easier to understand, extend, and use.</p>
                         </div>
                         <div class="card">
-                            <div class="card-title">
-                                <h2>Interactive Worlds</h2>
-                            </div>
-                            <div class="card-text">
-                                <p>Game-adjacent projects, prototypes, and creative systems where software supports stories, worldbuilding, and player interaction.</p>
-                            </div>
+                            <h3 class="card-title">Interactive Worlds</h3>
+                            <p class="card-text">Game-adjacent projects, prototypes, and creative systems where software supports stories, worldbuilding, and player interaction.</p>
                         </div>
                     </div>
                 </div>
@@ -89,28 +86,24 @@
             <section class="toolkits" id="toolkit">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>Toolkits</h2>
-                        </div>
-                        <div class="section-description">
-                            <p>I'm building my foundation around C#, software design, web fundamentals, and game-adjacent development.</p>
-                        </div>
+                        <h2 class="section-title">Toolkits</h2>
+                        <p class="section-description">I'm building my foundation around C#, software design, web fundamentals, and game-adjacent development.</p>
                     </div>
                     <div class="toolkit-grid">
                         <div class="toolkit-group">
-                            <h2>Core</h2>
+                            <h3>Core</h3>
                             <p>C#, JavaScript, HTML, CSS, SQL, Python</p>
                         </div>
                         <div class="toolkit-group">
-                            <h2>Software & Web</h2>
+                            <h3>Software & Web</h3>
                             <p>.NET, ASP.NET Core, Git, Github, Visual Studio, VS Code, Spyder</p>
                         </div>
                         <div class="toolkit-group">
-                            <h2>Game & Interactive</h2>
+                            <h3>Game & Interactive</h3>
                             <p>Godot 4, C#, gameplay prototypes, UI systems</p>
                         </div>
                         <div class="toolkit-group">
-                            <h2>Learning Next</h2>
+                            <h3>Learning Next</h3>
                             <p>React, TypeScript, Entity Framework Core, API design, unit testing</p>
                         </div>
                     </div>  
@@ -119,54 +112,57 @@
             <section class="projects" id="projects">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>Featured Projects</h2>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-description">Selected projects will be added here as they are completed and documented.</p>                        
+                    </div>
+                    <div class="project-showcase">
+                        <button class="project-control project-control-prev" type="button" aria-label="Previous project">
+                            ←
+                        </button>
+                        <div class="project-stack">
+                            <article class="project-card">
+                                <div class="project-card-header">
+                                    <h3 class="project-title">Project Template</h3>
+                                    <span class="project-status project-status--in-progress">In Progress</span>
+                                </div>
+                                <p class="project-summary">A reusable card layout for future portfolio projects</p>
+                                <div class="project-meta">
+                                    <p class="project-meta-item"><strong>Focus:</strong> Tooling (or whatever other focus)</p>
+                                    <p class="project-meta-item"><strong>Tech:</strong> C# · .NET · SQL · Godot · JavaScript</p>
+                                    <p class="project-meta-item"><strong>Role:</strong> Design · Development · Documentation</p>
+                                </div>
+                                <div class="project-actions">
+                                    <a class="button button-primary" href="#">View Case Study</a>
+                                    <a class="button button-secondary" href="#">View Code</a>
+                                </div>
+                            </article>
                         </div>
-                        <div class="section-description">
-                            <p>Selected projects will be added here as they are completed and documented.</p>
-                        </div>
-                        <article class="project-card">
-                            <div class="project-card-header">
-                                <h3 class="project-title">Project Template</h3>
-                                <span class="project-status">In Progress</span>
-                            </div>
-                            <p class="project-summary">
-                                A reusable card layout for future portfolio projects
-                            </p>
-                            <div class="project-meta">
-                                <p class="project-meta-item"><strong>Focus:</strong> Tooling (or whatever other focus)</p>
-                                <p class="project-meta-item"><strong>Tech:</strong> C# · .NET · SQL · Godot · JavaScript</p>
-                                <p class="project-meta-item"><strong>Role:</strong> Design · Development · Documentation</p>
-                            </div>
-                            <div class="project-actions">
-                                <a class="button button-primary" href="#">View Case Study</a>
-                                <a class="button button-secondary" href="#">View Code</a>
-                            </div>
-                        </article>
+                        <button class="project-control project-control-next" type="button" aria-label="Next project">
+                            →
+                        </button>                          
+                    </div>
+                    <div class="project-footer">
+                        <a class="button button-secondary" href="projects.html">View All Projects</a>
                     </div>
                 </div>
             </section>
             <section class="design-notes" id="notes">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>Design Notes</h2>
-                        </div>
-                        <div class="section-description">
-                            <p>A few principles that shape how I approach software projects.</p>
-                        </div>
+                        <h2 class="section-title">Design Notes</h2>
+                        <p class="section-description">A few principles that shape how I approach software projects.</p>
                     </div>
                     <div class="notes-list">
                         <div class="note-card">
-                            <h2>Build for Understanding</h2>
+                            <h3>Build for Understanding</h3>
                             <p>I try to build projects in a way that forces me to understand the decisions behind the code, not just the final result. AI can be useful for planning, review, and debugging, but I want the implementation work to reflect what I can actually explain.</p>
                         </div>
                         <div class="note-card">
-                            <h2>Systems Before Polish</h2>
+                            <h3>Systems Before Polish</h3>
                             <p>I like starting with the structure of a project: what data exists, how pieces connect, what the user needs to do, and what the smallest working version should be. Polish matters, but only after the core system has a clear shape.</p>
                         </div>
                         <div class="note-card">
-                            <h2>Useful Scope Over Impressive Scope</h2>
+                            <h3>Useful Scope Over Impressive Scope</h3>
                             <p>I try to keep early versions focused. A smaller project that works, teaches something, and can be improved is more valuable than a large idea that never becomes usable.</p>
                         </div>
                     </div>
@@ -175,15 +171,11 @@
             <section class="about" id="about">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>About</h2>
-                        </div>
+                        <h2 class="section-title">About</h2>
                     </div>
                     <div class="about-content">
                         <p>I'm a Software Engineering student focused on building practical tools, structured systems, and interactive projects. I'm especially drawn to C#, software design, web fundamentals, and game-adjacent development.</p>
-                        <br>
                         <p>A lot of what I build comes from the same interests that keep me curious outside of code: games, mythology, stories, and systems that turn scattered ideas into something usable. I enjoy projects where logic, structure, and creativity meet.</p>
-                        <br>
                         <p>Before pursuing software engineering, I worked as a Weather Forecaster in the Air Force, which gave me experience thinking through data, patterns, uncertainty, and clear communication. Today, I'm applying that same systems-focused mindset to software development.</p>
                     </div>
                 </div>
@@ -191,12 +183,10 @@
             <section class="contact" id="contact">
                 <div class="container">
                     <div class="section-header">
-                        <div class="section-title">
-                            <h2>Contact</h2>
-                        </div>
+                        <h2 class="section-title">Contact</h2>
                     </div>
                     <div class="contact-links">
-                        <a class="button button-primary" href="mailto:seanspray.dev@gmail.com">Email</a>
+                        <a class="button button-secondary" href="mailto:seanspray.dev@gmail.com">Email</a>
                         <a class="button button-secondary" href="https://github.com/SeanSprayDev" target="_blank">Github</a>
                         <a class="button button-secondary" href="https://www.linkedin.com/in/seanspray/" target="_blank">LinkedIn</a>
                         <a class="button button-secondary" href="assets/documents/Resume.pdf" target="_blank">Resume</a>  
@@ -209,7 +199,7 @@
                 <div class="footer-brand">
                     <span class="brand-mark"></span>
                 </div>
-                <p class="footer-text">@2026 Sean Spray</p>
+                <p class="footer-text">&copy; 2026 Sean Spray</p>
             </div>
         </footer>
     </body>
