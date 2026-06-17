@@ -1,12 +1,12 @@
 const projects = [
     {
-        title: "Portfolio Website",
-        status: "In Progress",
-        statusClass: "project-status--in-progress",
-        summary: "A responsive personal portfolio with a moonlit archive visual identity.",
-        focus: "Portfolio design and front-end development",
-        tech: "HTML · CSS · JavaScript",
-        role: "Design · Development · Documentation",
+        title: "SkillLoop",
+        status: "Planned",
+        statusClass: "project-status--planned",
+        summary: "A developer practice tool built around coding prompts, review feedback, progress tracking, and structured improvement loops.",
+        focus: "Full-stack learning tool and developer feedback workflow",
+        tech: "ASP.NET Core · C# · Blazor · SQLite",
+        role: "Product Design · Full-Stack Development · Documentation",
         caseStudyUrl: "#",
         codeUrl: "#"
     },
