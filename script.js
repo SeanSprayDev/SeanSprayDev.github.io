@@ -67,8 +67,8 @@ function renderProject() {
     `;
 
     projectActions.innerHTML = `
-        <a class="button button-primary" href="${project.caseStudyUrl}">View Case Study</a>
-        <a class="button button-secondary" href="${project.codeUrl}">View Code</a>
+        <span class="button button-primary button-disabled" href="${project.caseStudyUrl}">Case Study Coming Soon</span>
+        <span class="button button-secondary button-disabled" href="${project.codeUrl}">Code Coming Soon</span>
     `;
 
     projectCurrent.textContent = String(currentProjectIndex + 1).padStart(2, "0");
